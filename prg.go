@@ -6,7 +6,8 @@ import (
 	"os"
 )
 
-//go:generate stringer -type=DataType
+//go:generate go run golang.org/x/tools/cmd/stringer -type=DataType
+
 type DataType uint8
 
 const (
