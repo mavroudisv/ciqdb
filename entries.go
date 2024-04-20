@@ -24,7 +24,8 @@ func (e *EntrySection) String() string {
 	return buf.String()
 }
 
-//go:generate stringer -type=AppType
+//go:generate go run golang.org/x/tools/cmd/stringer -type=AppType
+
 type AppType uint8
 
 const (
